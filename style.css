@@ -1,81 +1,186 @@
-#logo{
-    position: fixed;
-    top: 0px;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1170px;
+    padding-inline: 30px;
     width: 100%;
-    height: 150px;
-    margin-top: 20px;
-    background-image: url('images/background.png');
-    text-align: start;
+    margin-inline: auto;
 }
 
-#logo img{
-    margin: auto;
-    height: 20%;
-    padding-top: 15px;
+.button {
+    background-color: #C271FF;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 100px;
+    font-weight: 600;
+
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.464);
+    transition: background-color .5s ease-in-out;
 }
 
-.hero-text h2{
-    font-size: 16px;
+.button:hover {
+    background-color: #c783fb;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+h2 span {
+    color: #C271FF;
+    font-weight: 600;
+}
+
+/* header styling */
+header {
+    /* background-color: #071629; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* hero styles */
+.hero {
+    background-image: url(/images/background.png);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
 }
 
-.instructors{
+.hero .wrapper {
+    height: 100vh;
     display: flex;
-    flex-direction: row ;
-    align-items: center;
-    gap: 30px;
-    margin: 40px;
-    max-width: 600px; 
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding-top: 150px;
+    padding-bottom: 40px;
 }
 
-.instructor{
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 75px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hero-text .tags {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hero-text .tags p {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.hero-text .button {
+    margin-top: 20px;
+}
+
+.instructors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.instructors-flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.instructor {
     text-align: center;
     font-size: 16px;
 }
 
-.instructor img{
+.instructor img {
     width: 120px;
     height: 20%;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.qoute{
+.qoute {
     text-align: center;
     font-size: 16px;
 }
 
-.tutorials{
+.tutorials {
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     align-items: center;
     gap: 30px;
     margin: 40px;
     max-width: 100px;
 }
 
-.tutorials h2{
+.tutorials h2 {
     text-align: right;
 
 }
 
-.tutorial img{
+.tutorial img {
     width: 200px;
     height: 120px;
     object-fit: cover;
     align-items: center;
 }
 
-.membership{
+.membership {
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     align-items: center;
     gap: 30px;
     margin: 40px;
     max-width: 100px;
 }
 
-.member img{
+.member img {
     margin: auto;
     width: 80px;
     height: 20%;
